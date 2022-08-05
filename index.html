@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--! CSS de Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/style.css">
         <title>Distribuidora Norte | Mueblería y Colchonería</title>
     </head>
@@ -51,12 +53,18 @@
             </section>
             
             <!--Sección Novedades del home-->
-            <section class="novedad">
-                <img src="./img/bahiut.jpg" alt="bahiut">
-                <div>
-                    <h3>Novedad del Mes</h3> 
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat impedit culpa quis sit saepe doloremque obcaecati., neque nihil. Necessitatibus fuga voluptatem aliquid sit deserunt asperiores perferendis neque autem quos! Distinctio dicta, asperiores voluptatibus officiis doloremque molestiae facere numquam quia? Nam.</p> 
-                </div>              
+            <section class="container-fluid novedad">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Novedad del Mes</h3> 
+                    </div>
+                    <div class="col-4">
+                        <img src="./img/bahiut.jpg" class="img-fluid" alt="bahiut">
+                    </div>
+                    <div class="col-8 d-flex align-self-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat impedit culpa quis sit saepe doloremque obcaecati., neque nihil. Necessitatibus fuga voluptatem aliquid sit deserunt asperiores perferendis neque autem quos! Distinctio dicta, asperiores voluptatibus officiis doloremque molestiae facere numquam quia? Nam.</p> 
+                    </div>
+                </div>
             </section>
 
             <!--Galeria de Marcas-->
@@ -114,5 +122,8 @@
                 <a href="https://wa.me/+5493535643804"><img src="./img/whatsapp-f.png" alt="whatsapp" target="_blank"></a>
             </div>
         </footer>
+
+        <!--! JS de Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

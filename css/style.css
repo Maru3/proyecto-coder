@@ -154,16 +154,16 @@ footer div a img {
 .novedad {
     display: flex;
     align-items: center;
-    margin: 100px 50px;
+    /* margin: 100px 50px; */
 }
 
-.novedad div {
+/* .novedad div {
     width: 70%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-}
+} */
 
 .novedad div h3 {
     font-size: 45px;
@@ -181,10 +181,10 @@ footer div a img {
     padding: 0px 25px;
 }
 
-.novedad img {
+/* .novedad img {
     width: 400px;
     height: 400px;
-}
+} */
 
 .grid-galeria {
     width: 100%;
@@ -259,6 +259,11 @@ footer div a img {
     color:#DFBF00;
 }
 
+/* .carrusel {
+    margin-top: 8% !important;
+    margin-bottom: 5% !important;
+} */
+
 .tienda > div {
     display: flex;
     justify-content:space-around;
@@ -303,10 +308,37 @@ footer div a img {
 /*-----------NOSOTROS-----------*/
 /*------MAIN------*/
 
-.quienes-somos img {
-    width: 100%;
+.container-fluid {
+    margin-top: 8% !important;
 }
 
+.container-fluid .row .col-7 h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #DFBF00;
+}
+
+.container-fluid .row .col-7 p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.container {
+    margin-top: 8% !important;
+    margin-bottom: 10% !important;
+}
+
+.container .row .col-12 h2 {
+    font-size: 40px;
+    margin-bottom: 35px;
+    color: #DFBF00;
+}
+
+.container .row .col h3 {
+    font-size: 21px;
+    margin-top: 15px;
+    text-align: center;
+}
 
 /*-----------NOVEDADES-----------*/
 /*------MAIN------*/
@@ -316,6 +348,40 @@ footer div a img {
 }
 
 /*-----------CONTACTO-----------*/
+/*------MAIN------*/
+
+.container-fluid {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid .row .col-6 h2 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-transform:uppercase;
+    color:#DD8C22;
+    margin-bottom: 25px;
+}
+
+.container-fluid .row .col-6 h3 {
+    font-size: 21px;
+    margin-top: 10px;
+}
+
+.container-fluid .row .col-6 p {
+    font-size: 18px;
+}
+.container-fluid .row .col-6 a {
+    font-size: 18px;
+    color:#72A300 ;
+}
+
+.container-fluid .row .col-6 input {
+    margin-bottom: 10px;
+}
 
 /*-----------MEDIA QUERIES-----------*/
 
