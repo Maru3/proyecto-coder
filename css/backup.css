@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*-----------RESETEO-----------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----------BODY-----------*/
+
+body {
+    font-family: 'Albert Sans', sans-serif;
+}
+
+/*-----------HEADER-----------*/
+
+header {
+    width: 100%;
+    background-color: #f2f2f27b;
+    padding: 15px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content:space-between;
+    align-items:center;
+}
+
+header a img {
+    width: 60px;
+    height: 50px;
+    
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 15px;
+}
+
+header nav ul li {
+    margin: 15px 15px 0px 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    /* color: #594E38; */
+    color: #A6C447;
+    /* transition: 1s; */
+}
+
+header nav ul li a:hover {
+    color:#DD8C22;
+}
+
+/*-----------FOOTER-----------*/
+
+footer {
+    width: 100%;
+    background-color: #f2f2f27b;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .logo {
+    width: 100px;
+    padding-top: 10px;
+}
+
+footer p {
+    font-size: 15px;
+    color: #333333;    
+}
+
+footer div a img {
+    padding: 5px;     
+}
+
+/*-----------INDEX-----------*/
+/*------MAIN------*/
+
+.hero  {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/hero2.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: #3333337c;
+    display: flex;
+    justify-content: center;
+}
+
+.hero div {
+    width: 60%;
+    text-align: center;
+}
+
+.hero div h1 {
+    /* color: #DFBF00; */
+    color: #BF6430;
+    font-size: 60px;
+    font-weight: 700;
+    position: relative;
+    top: 15%;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.hero div h2 {
+    color: #731D5C;
+    font-size: 45px;
+    font-weight: 600;
+    position: relative;
+    top: 15%;
+}
+
+.categorias > div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.categorias div div {
+    margin: 80px 0px;
+    text-align: center;
+    width: 450px;
+    height: 400px;
+    transition: 0.5s;
+}
+
+.categorias div div:hover {
+    transform:scale(1.1);
+}
+
+.categorias div div img {
+    width: 400px;
+    height: 400px;
+}
+
+.categorias div div h3 {
+    font-size: 35px;
+    color: #030303;
+    position:relative;
+    bottom: 260px;
+}
+
+.novedad {
+    display: flex;
+    align-items: center;
+    /* margin: 100px 50px; */
+}
+
+/* .novedad div {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+
+.novedad .novedad_columna .novedad_titulo h3 {
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    text-transform:uppercase;
+    margin: 0px 0px 30px;
+    color: #72A300;
+}
+
+.novedad div div p {
+    font-size: 18px;
+    font-weight: 300;
+    text-align:justify;
+    padding: 0px 25px;
+}
+
+/* .novedad img {
+    width: 400px;
+    height: 400px;
+} */
+
+.grid-galeria {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 150px;    
+    gap: 20px;
+}
+
+.grid-galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 1s;
+}
+
+.grid-galeria div img:hover {
+    transform:scale(1.2);
+}
+
+.banner {
+    /* background-color: #605E5E; */
+    background-color: #DFBF00;
+    margin: 90px 0px 0px ;
+}
+
+.banner .banner-contenedor {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+.banner div {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.banner div div h4 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 10px 0px;
+}
+
+.banner div div p {
+    color: #605E5E;
+    font-size: 16px;
+}
+
+/*-----------PRODUCTOS-----------*/
+/*------MAIN------*/
+
+.banner-section {
+    width: 100%;
+    height: 45vh;
+    background-image: url(../img/hero.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-blend-mode: overlay;
+    background-color: #333333b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-section h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color:#DFBF00;
+}
+
+/* .carrusel {
+    margin-top: 8% !important;
+    margin-bottom: 5% !important;
+} */
+
+.tienda > div {
+    display: flex;
+    justify-content:space-around;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    margin: 10% 0%;
+}
+
+.tienda div div {
+    border: 1px solid rgba(41, 41, 41, 0.2);
+    margin-bottom: 30px;
+    /* text-align: center; */
+    height: 600px;
+    background-color: #f2f2f2b1;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-content: center;
+    align-items: center;
+}
+
+.tienda div div h2 {
+    font-size: 20px;
+    margin: 15px 0px;
+    text-transform: uppercase;
+}
+
+.tienda div div a {
+    text-decoration: none;
+    background-color: #BF6430;
+    font-size: 15px;
+    padding: 6px;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.tienda div div a:hover {
+    background-color: #72A300;
+    padding: 6px 10px;
+}
+
+
+/*-----------NOSOTROS-----------*/
+/*------MAIN------*/
+
+.container-fluid {
+    margin-top: 8% !important;
+}
+
+.container-fluid .row .col-12 h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #DFBF00;
+}
+
+.container-fluid .row .col-12 p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.container {
+    margin-top: 8% !important;
+    margin-bottom: 10% !important;
+}
+
+.container .row .col-12 h2 {
+    font-size: 40px;
+    margin-bottom: 35px;
+    color: #DFBF00;
+}
+
+.container .row .col-12 h3 {
+    font-size: 21px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/*-----------NOVEDADES-----------*/
+/*------MAIN------*/
+
+.ingreso img {
+    width: 100%;
+}
+
+/*-----------CONTACTO-----------*/
+/*------MAIN------*/
+
+.container-fluid {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid .row .col-12 h2 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-transform:uppercase;
+    color:#DD8C22;
+    margin-bottom: 25px;
+}
+
+.container-fluid .row .col-sm-6 h3 {
+    font-size: 21px;
+    margin-top: 10px;
+}
+
+.container-fluid .row .col-12 p {
+    font-size: 18px;
+}
+.container-fluid .row .col-12 a {
+    font-size: 18px;
+    color:#72A300 ;
+}
+
+.container-fluid .row .col-12 input {
+    margin-bottom: 10px;
+}
+
+/*-----------MEDIA QUERIES-----------*/
+
+/*------INDEX-----*/
+
+@media screen and (max-width: 920px){
+    .hero div {
+        width:90%;
+    }
+    
+    .hero div h1 {
+        font-size: 50px;
+    }
+
+    .hero div h2 {
+        font-size: 40px;
+    }
+
+    .novedad div h3 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 742px){
+    .hero {
+        background-size: contain;
+        height: 60vh;
+    }
+
+    .hero div h1 {
+        font-size: 42px;
+    }
+
+    .novedad div h3 {   
+        font-size: 28px;
+    }
+
+
+}
+
+@media screen and (max-width: 625px){
+    header {
+        flex-direction: column;
+    }
+
+    .novedad {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .novedad div h3 {
+        margin: 20px 0px 30px;
+    }
+}
+
+@media screen and (max-width:535px) {
+    .hero {
+        height: 55vh;
+    }
+
+    .hero div h2 {
+        font-size: 35px;
+    }
+
+    .novedad div h3 {
+        font-size: 30px;
+    }
+
+}
+
+
+/*------PRODUCTOS------*/
+
+@media screen and (max-width: 730px){
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer p {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 610px){
+
+        header {
+            flex-direction: column;
+        }
+}

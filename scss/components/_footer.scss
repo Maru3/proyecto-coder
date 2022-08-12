@@ -1,0 +1,23 @@
+footer {
+    width: 100%;
+    background-color: $color-gris;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .logo {
+        width: 100px;
+        padding-top: 10px;
+    }
+    p {
+        font-size: 15px;
+        color: $color-negro;   
+    }
+    div {
+        a {
+            img {
+                padding: 5px;   
+            }
+        }
+    }
+}

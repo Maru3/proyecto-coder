@@ -1,0 +1,33 @@
+header {
+    width: 100%;
+    background-color:$color-gris;
+    padding: 15px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    a {
+        img {
+            width: 60px;
+            height: 50px;
+        }
+    }
+    nav {
+        ul{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding-right: 15px;
+            li{
+                margin: 15px 15px 0px 15px;
+                a{
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: $color-verde-claro;
+                    &:hover{
+                        color:$color-naranja;
+                    }
+                }
+            }
+        }
+    }
+}

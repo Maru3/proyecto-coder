@@ -1,0 +1,67 @@
+/*------INDEX-----*/
+
+@media screen and (max-width: 920px){
+    .hero div {
+        width:90%;
+    }
+    
+    .hero div h1 {
+        font-size: 50px;
+    }
+
+    .hero div h2 {
+        font-size: 40px;
+    }
+
+    .novedad .novedad_columna .novedad_titulo h3 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 742px){
+    .hero {
+        background-size: contain;
+        height: 60vh;
+    }
+
+    .hero div h1 {
+        font-size: 42px;
+    }
+
+    .novedad .novedad_columna .novedad_titulo h3 {   
+        font-size: 28px;
+    }
+
+
+}
+
+@media screen and (max-width: 625px){
+    header {
+        flex-direction: column;
+    }
+
+    .novedad {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .novedad .novedad_columna .novedad_titulo h3 {
+        margin: 20px 0px 30px;
+    }
+}
+
+@media screen and (max-width:535px) {
+    .hero {
+        height: 55vh;
+    }
+
+    .hero div h2 {
+        font-size: 35px;
+    }
+
+    .novedad .novedad_columna .novedad_titulo h3 {
+        font-size: 30px;
+    }
+
+}
