@@ -114,9 +114,7 @@
         padding: 30px 0px;
     }
     .banner-contenedor {
-        display: flex;
-        justify-content:space-around;
-        align-items:center;
+        @extend %flex-around;
         flex-wrap: wrap;
         div {
             h4 {

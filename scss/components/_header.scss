@@ -2,9 +2,7 @@ header {
     width: 100%;
     background-color:$color-gris;
     padding: 15px;
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
+    @include flex (flex,center,space-between);
     a {
         img {
             width: 60px;

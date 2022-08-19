@@ -1,8 +1,14 @@
-@import "./base/generales";
 @import "./base/variables";
+@import "./base/extends";
+@import "./base/mixins";
+@import "./base/generales";
 @import "./components/header";
 @import "./components/footer";
 @import "./components/index";
+@import "./components/productos";
+@import "./components/nosotros";
+@import "./components/novedades";
+@import "./components/contacto";
 
 
 /*-----------MEDIA QUERIES-----------*/

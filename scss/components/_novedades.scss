@@ -1,0 +1,27 @@
+@import "../base/maps";
+
+.contenedor{
+    margin-top: 8%;
+}
+
+.ingreso{
+    div{
+        div{
+            div{
+                div{
+                    h2{
+                        color: map-get($titulo, color-texto );
+                        font-size: map-get($titulo, fuente-texto );
+                        margin-bottom: map-get($titulo, margen-inferior);
+                        font-weight: map-get($titulo, peso-fuente );
+                        text-align: map-get($titulo, alineacion-texto );
+                    }
+                    p{
+                        font-size: map-get($parrafo, fuente-texto);
+                        text-align: map-get($titulo, alineacion-texto );
+                    }
+                }
+            }
+        }
+    }
+}
