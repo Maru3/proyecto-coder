@@ -1,34 +1,58 @@
 /*------INDEX-----*/
+
+@media screen and (max-width: 1320px){
+    .categorias{
+        div{
+            div{
+                width: 440px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 920px){
-    .hero div {
-        width:90%;
-    }
-    
-    .hero div h1 {
-        font-size: 50px;
+    .hero{
+        div {
+            width:90%;
+            h1{
+                font-size: 50px;
+            }
+            h2{
+                font-size: 40px;
+            }
+        }
     }
 
-    .hero div h2 {
-        font-size: 40px;
-    }
-
-    .novedad .novedad_columna .novedad_titulo h3 {
-        font-size: 40px;
+    .novedad{
+        .novedad_columna{
+            .novedad_titulo{
+                h3{
+                    font-size: 40px;
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 742px){
-    .hero {
+    .hero{
         background-size: contain;
         height: 60vh;
+        div{
+            h1{
+                font-size: 42px;
+            }
+        }
     }
 
-    .hero div h1 {
-        font-size: 42px;
-    }
-
-    .novedad .novedad_columna .novedad_titulo h3 {   
-        font-size: 28px;
+    .novedad{
+        .novedad_columna{  
+            .novedad_titulo{
+                h3{
+                    font-size: 28px;
+                }  
+            } 
+        }
     }
 }
 
@@ -37,29 +61,55 @@
         flex-direction: column;
     }
 
-    .novedad {
+    .categorias{
+        div{
+            div{
+                margin: 50px 0px;
+            }
+        }
+    }
+    .novedad{
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-    }
-
-    .novedad .novedad_columna .novedad_titulo h3 {
-        margin: 20px 0px 30px;
+        .novedad_columna{
+            .novedad_titulo{
+                h3 {
+                    margin: 20px 0px 30px;
+                }
+            }
+            div{
+                p{
+                    font-size: 16px;
+                    padding: 0px 10px;
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width:535px) {
     .hero {
-        height: 55vh;
+        height: 50vh;
+        div{
+            h1{
+                font-size: 35px;
+            }
+            h2{
+                font-size: 30px;
+            }
+        }
     }
 
-    .hero div h2 {
-        font-size: 35px;
-    }
-
-    .novedad .novedad_columna .novedad_titulo h3 {
-        font-size: 30px;
-    }
+    .novedad{
+        .novedad_columna{
+            .novedad_titulo{
+                h3 {
+                    font-size: 30px;
+                }
+            }
+        }
+    } 
 }
 
 /*------PRODUCTOS------*/
@@ -67,16 +117,67 @@
 
     footer {
         flex-direction: column;
-    }
-
-    footer p {
-        margin-bottom: 10px;
+        p{
+            margin-bottom: 10px;
+        }
     }
 }
 
 @media screen and (max-width: 610px){
 
-        header {
-            flex-direction: column;
+    header {
+        flex-direction: column;
+    }
+}
+
+/*-----------NOSOTROS-----------*/
+@media screen and (max-width: 635px){
+    .contenedor-fluido{
+        div{
+            div{
+                p{
+                    font-size: 15px;
+                }
+            }
         }
+    }
+}
+
+/*-----------NOVEDADES-----------*/
+@media screen and (max-width: 468px){
+
+    footer {
+        p{
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+    }
+}
+
+/*-----------CONTACTO-----------*/
+@media screen and (max-width: 660px){
+
+    .contenedor-fluido-contacto{
+        div{
+            div{
+                h2{
+                    font-size: 25px;
+                }
+                div{
+                    h3{
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+            div{
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
 }
