@@ -1,5 +1,4 @@
 /*------INDEX-----*/
-
 @media screen and (max-width: 920px){
     .hero div {
         width:90%;
@@ -31,8 +30,6 @@
     .novedad .novedad_columna .novedad_titulo h3 {   
         font-size: 28px;
     }
-
-
 }
 
 @media screen and (max-width: 625px){
@@ -63,5 +60,23 @@
     .novedad .novedad_columna .novedad_titulo h3 {
         font-size: 30px;
     }
+}
 
+/*------PRODUCTOS------*/
+@media screen and (max-width: 730px){
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer p {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 610px){
+
+        header {
+            flex-direction: column;
+        }
 }

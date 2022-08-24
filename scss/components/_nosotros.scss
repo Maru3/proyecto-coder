@@ -1,0 +1,37 @@
+/*-----------NOSOTROS-----------*/
+.contenedor-fluido{
+    margin-top: 8% !important;
+    div {
+        div{
+            h2{
+                font-size: 40px;
+                margin-bottom: 30px;
+                color: $color-amarillo;
+                ;
+            }
+            p{
+                font-size: 18px;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+.contenedor{
+    margin-top: 8% !important;
+    margin-bottom: 10% !important;
+    div{
+        div{
+            h2{
+                font-size: 40px;
+                margin-bottom: 35px;
+                color: $color-amarillo;
+            }
+            h3{
+                font-size: 21px;
+                margin-top: 15px;
+                text-align: center;
+            }
+        }
+    }
+}

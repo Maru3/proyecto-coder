@@ -1,22 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*-----------EXTENDS-----------*/
 footer, .banner .banner-contenedor {
   display: flex;
   align-items: center;
   justify-content: space-around; }
 
-.banner-section {
+.banner-section, .contenedor-fluido-contacto, .contenedor-mapa {
   display: flex;
   align-items: center;
   justify-content: center; }
 
+/*-----------RESETEO-----------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+/*-----------BODY-----------*/
 body {
   font-family: 'Albert Sans', sans-serif; }
 
+/*-----------BANNER DE TODAS LAS SECCIONES DEL SITIO-----------*/
 .banner-section {
   width: 100%;
   height: 45vh;
@@ -32,6 +36,7 @@ body {
     font-weight: 700;
     color: #DFBF00; }
 
+/*-----------HEADER-----------*/
 header {
   width: 100%;
   background-color: #f2f2f27b;
@@ -56,6 +61,7 @@ header {
         header nav ul li a:hover {
           color: #DD8C22; }
 
+/*-----------FOOTER-----------*/
 footer {
   width: 100%;
   background-color: #f2f2f27b;
@@ -69,6 +75,7 @@ footer {
   footer div a img {
     padding: 5px; }
 
+/*-----------INDEX-----------*/
 .hero {
   width: 100%;
   height: 80vh;
@@ -167,7 +174,65 @@ footer {
       color: #605E5E;
       font-size: 16px; }
 
-/*-----------Novedades-----------*/
+/*-----------PRODUCTOS-----------*/
+.contenedor {
+  margin-top: 8% !important; }
+
+.tienda .contenedor-productos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10% 0%; }
+  .tienda .contenedor-productos div {
+    border: 1px solid rgba(41, 41, 41, 0.2);
+    margin-bottom: 30px;
+    height: 600px;
+    background-color: #f2f2f2b1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center; }
+    .tienda .contenedor-productos div h2 {
+      font-size: 20px;
+      margin: 15px 0px;
+      text-transform: uppercase; }
+    .tienda .contenedor-productos div a {
+      text-decoration: none;
+      background-color: #BF6430;
+      font-size: 15px;
+      padding: 6px;
+      color: #FFFFFF;
+      border-radius: 3px; }
+      .tienda .contenedor-productos div a:hover {
+        background-color: #72A300;
+        padding: 6px 10px; }
+
+/*-----------NOSOTROS-----------*/
+.contenedor-fluido {
+  margin-top: 8% !important; }
+  .contenedor-fluido div div h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #DFBF00; }
+  .contenedor-fluido div div p {
+    font-size: 18px;
+    text-align: justify; }
+
+.contenedor {
+  margin-top: 8% !important;
+  margin-bottom: 10% !important; }
+  .contenedor div div h2 {
+    font-size: 40px;
+    margin-bottom: 35px;
+    color: #DFBF00; }
+  .contenedor div div h3 {
+    font-size: 21px;
+    margin-top: 15px;
+    text-align: center; }
+
+/*-----------NOVEDADES-----------*/
+/*-----------MAPS-----------*/
 .contenedor {
   margin-top: 8%; }
 
@@ -181,6 +246,36 @@ footer {
 .ingreso div div div div p {
   font-size: 18px;
   text-align: center; }
+
+/*-----------CONTACTO-----------*/
+.contenedor-fluido-contacto {
+  margin: 6% 0 !important; }
+  .contenedor-fluido-contacto div div h2 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #DD8C22;
+    margin-bottom: 25px; }
+  .contenedor-fluido-contacto div div div h3 {
+    font-size: 21px;
+    margin-top: 10px; }
+  .contenedor-fluido-contacto div div div p {
+    font-size: 18px; }
+  .contenedor-fluido-contacto div div div a {
+    font-size: 18px;
+    color: #72A300; }
+  .contenedor-fluido-contacto div div p {
+    font-size: 18px; }
+  .contenedor-fluido-contacto div div form div input {
+    margin-bottom: 10px; }
+
+.contenedor-mapa {
+  margin-top: 10% !important;
+  margin-bottom: 8% !important;
+  flex-wrap: wrap; }
+  .contenedor-mapa div div iframe {
+    border: 2px solid #A6C447 !important; }
 
 /*-----------MEDIA QUERIES-----------*/
 /*------INDEX-----*/
@@ -220,3 +315,14 @@ footer {
     font-size: 35px; }
   .novedad .novedad_columna .novedad_titulo h3 {
     font-size: 30px; } }
+
+/*------PRODUCTOS------*/
+@media screen and (max-width: 730px) {
+  footer {
+    flex-direction: column; }
+  footer p {
+    margin-bottom: 10px; } }
+
+@media screen and (max-width: 610px) {
+  header {
+    flex-direction: column; } }
