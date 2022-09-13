@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 1320px){
     .categorias{
-        div{
+        .contenedor-categorias{
             div{
                 width: 440px;
             }
@@ -12,75 +12,82 @@
 
 @media screen and (max-width: 920px){
     .hero{
-        div {
-            width:90%;
-            h1{
-                font-size: 50px;
-            }
-            h2{
-                font-size: 40px;
+
+        h1{
+            font-size: 50px;
+        }
+        h2{
+            font-size: 40px;
+        }
+    }
+
+    .categorias {
+        .contenedor-categorias {
+            div {
+                width: 410px;
+                margin-bottom: 50px;
             }
         }
     }
 
-    .novedad{
-        .novedad-columna{
-            .novedad-titulo{
+    .novedad, .marcas{
+        .novedad-columna, .marcas-columna{
+            .novedad-titulo, .marcas-titulo{
                 h3{
                     font-size: 40px;
                 }
             }
         }
     }
+
+    .grid-galeria {
+        padding: 0 10px;
+    }
 }
+
 
 @media screen and (max-width: 742px){
     .hero{
-        background-size: contain;
+        background-size: cover;
         height: 60vh;
-        div{
-            h1{
-                font-size: 42px;
-            }
+        h1{
+            font-size: 40px;
         }
     }
 
-    .novedad{
-        .novedad-columna{  
-            .novedad-titulo{
+    .novedad, .marcas{
+        .novedad-columna, .marcas-columna{
+            .novedad-titulo, .marcas-titulo{
                 h3{
-                    font-size: 28px;
-                }  
-            } 
+                    font-size: 30px;
+                }
+            }
         }
     }
 }
 
 @media screen and (max-width: 625px){
-    header {
-        flex-direction: column;
-    }
 
     .categorias{
-        div{
+        .contenedor-categorias{
             div{
-                margin: 50px 0px;
+                margin: 40px 0px;
             }
         }
     }
-    .novedad{
+    .novedad, .marcas{
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        .novedad-columna{
-            .novedad-titulo{
+        .novedad-columna, .marcas-columna{
+            .novedad-titulo, .marcas-titulo{
                 h3 {
                     margin: 20px 0px 30px;
                 }
             }
             div{
                 p{
-                    font-size: 16px;
+                    font-size: 15px;
                     padding: 0px 10px;
                 }
             }
@@ -91,21 +98,25 @@
 @media screen and (max-width:535px) {
     .hero {
         height: 50vh;
-        div{
-            h1{
-                font-size: 35px;
-            }
-            h2{
-                font-size: 30px;
-            }
+        h1{
+            font-size: 35px;
+        }
+        h2{
+            font-size: 30px;
         }
     }
 
-    .novedad{
-        .novedad-columna{
-            .novedad-titulo{
+    .novedad, .marcas{
+        .novedad-columna, .marcas-columna{
+            .novedad-titulo, .marcas-titulo{
                 h3 {
                     font-size: 30px;
+                }
+            }
+            div{
+                p{
+                    font-size: 15px;
+                    padding: 20px 10px;
                 }
             }
         }
@@ -120,13 +131,6 @@
         p{
             margin-bottom: 10px;
         }
-    }
-}
-
-@media screen and (max-width: 610px){
-
-    header {
-        flex-direction: column;
     }
 }
 

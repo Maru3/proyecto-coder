@@ -302,52 +302,56 @@ footer {
 /*-----------MEDIA QUERIES-----------*/
 /*------INDEX-----*/
 @media screen and (max-width: 1320px) {
-  .categorias div div {
+  .categorias .contenedor-categorias div {
     width: 440px; } }
 
 @media screen and (max-width: 920px) {
-  .hero div {
-    width: 90%; }
-    .hero div h1 {
-      font-size: 50px; }
-    .hero div h2 {
-      font-size: 40px; }
-  .novedad .novedad-columna .novedad-titulo h3 {
-    font-size: 40px; } }
+  .hero h1 {
+    font-size: 50px; }
+  .hero h2 {
+    font-size: 40px; }
+  .categorias .contenedor-categorias div {
+    width: 410px;
+    margin-bottom: 50px; }
+  .novedad .novedad-columna .novedad-titulo h3, .novedad .novedad-columna .marcas-titulo h3, .novedad .marcas-columna .novedad-titulo h3, .novedad .marcas-columna .marcas-titulo h3, .marcas .novedad-columna .novedad-titulo h3, .marcas .novedad-columna .marcas-titulo h3, .marcas .marcas-columna .novedad-titulo h3, .marcas .marcas-columna .marcas-titulo h3 {
+    font-size: 40px; }
+  .grid-galeria {
+    padding: 0 10px; } }
 
 @media screen and (max-width: 742px) {
   .hero {
-    background-size: contain;
+    background-size: cover;
     height: 60vh; }
-    .hero div h1 {
-      font-size: 42px; }
-  .novedad .novedad-columna .novedad-titulo h3 {
-    font-size: 28px; } }
+    .hero h1 {
+      font-size: 40px; }
+  .novedad .novedad-columna .novedad-titulo h3, .novedad .novedad-columna .marcas-titulo h3, .novedad .marcas-columna .novedad-titulo h3, .novedad .marcas-columna .marcas-titulo h3, .marcas .novedad-columna .novedad-titulo h3, .marcas .novedad-columna .marcas-titulo h3, .marcas .marcas-columna .novedad-titulo h3, .marcas .marcas-columna .marcas-titulo h3 {
+    font-size: 30px; } }
 
 @media screen and (max-width: 625px) {
-  header {
-    flex-direction: column; }
-  .categorias div div {
-    margin: 50px 0px; }
-  .novedad {
+  .categorias .contenedor-categorias div {
+    margin: 40px 0px; }
+  .novedad, .marcas {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center; }
-    .novedad .novedad-columna .novedad-titulo h3 {
+    .novedad .novedad-columna .novedad-titulo h3, .novedad .novedad-columna .marcas-titulo h3, .novedad .marcas-columna .novedad-titulo h3, .novedad .marcas-columna .marcas-titulo h3, .marcas .novedad-columna .novedad-titulo h3, .marcas .novedad-columna .marcas-titulo h3, .marcas .marcas-columna .novedad-titulo h3, .marcas .marcas-columna .marcas-titulo h3 {
       margin: 20px 0px 30px; }
-    .novedad .novedad-columna div p {
-      font-size: 16px;
+    .novedad .novedad-columna div p, .novedad .marcas-columna div p, .marcas .novedad-columna div p, .marcas .marcas-columna div p {
+      font-size: 15px;
       padding: 0px 10px; } }
 
 @media screen and (max-width: 535px) {
   .hero {
     height: 50vh; }
-    .hero div h1 {
+    .hero h1 {
       font-size: 35px; }
-    .hero div h2 {
+    .hero h2 {
       font-size: 30px; }
-  .novedad .novedad-columna .novedad-titulo h3 {
-    font-size: 30px; } }
+  .novedad .novedad-columna .novedad-titulo h3, .novedad .novedad-columna .marcas-titulo h3, .novedad .marcas-columna .novedad-titulo h3, .novedad .marcas-columna .marcas-titulo h3, .marcas .novedad-columna .novedad-titulo h3, .marcas .novedad-columna .marcas-titulo h3, .marcas .marcas-columna .novedad-titulo h3, .marcas .marcas-columna .marcas-titulo h3 {
+    font-size: 30px; }
+  .novedad .novedad-columna div p, .novedad .marcas-columna div p, .marcas .novedad-columna div p, .marcas .marcas-columna div p {
+    font-size: 15px;
+    padding: 20px 10px; } }
 
 /*------PRODUCTOS------*/
 @media screen and (max-width: 730px) {
@@ -355,10 +359,6 @@ footer {
     flex-direction: column; }
     footer p {
       margin-bottom: 10px; } }
-
-@media screen and (max-width: 610px) {
-  header {
-    flex-direction: column; } }
 
 /*-----------NOSOTROS-----------*/
 @media screen and (max-width: 635px) {
