@@ -1,47 +1,43 @@
 /*-----------INDEX-----------*/
 .hero {
     width: 100%;
-    height: 80vh;
-    background-image: url(../img/hero2.jpg);
-    background-position:center;
+    height: 90vh;
+    background-image: url(../img/hero3.jpg);
+    background-position:bottom;
     background-size:cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-blend-mode: overlay;
-    background-color:$color-negro-back;
+    background-attachment:scroll;
     display: flex;
-    justify-content: center;
-    div {
-        width: 60%;
-        text-align: center;
-        h1 {
-            color: $color-naranja-oscuro;
-            font-size: 60px;
-            font-weight: 700;
-            position: relative;
-            top: 15%;
-            letter-spacing: 2px;
-            margin-bottom: 5px;
-        }
-        h2 {
-            color: $color-violeta;
-            font-size: 45px;
-            font-weight: 600;
-            position: relative;
-            top: 15%;
-        }
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        color: $color-marron;
+        font-size: 60px;
+        font-weight: 700;
+        position: relative;
+        top: 15%;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+    h2 {
+        color: $color-dorado;
+        font-size: 45px;
+        font-weight: 600;
+        position: relative;
+        top: 15%;
     }
 }
 
 .categorias {
-    div {
+    .contenedor-categorias {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-wrap: wrap;
+        margin: 135px 0px 100px 0px;
         div {
-            margin: 80px 0px;
+            position: relative;
             text-align: center;
-            width: 450px;
+            width: 400px;
             height: 400px;
             transition: 0.5s;
             &:hover{
@@ -50,37 +46,47 @@
             img {
                 width: 400px;
                 height: 400px;
+                object-fit:cover;
+                box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75); 
             }
             h3 {
+                position:absolute;
+                bottom: 0;
                 font-size: 35px;
-                color: $color-negro-cat;
-                position:relative;
-                bottom: 260px;
+                width: 100%;
+                background-color: $color-naranja-oscuro;
+                color: $color-blanco;
             }
         }
     }
 }
 
-.novedad {
+.novedad, .marcas {
     display: flex;
     align-items: center;
-    .novedad_columna {
-        .novedad_titulo{
+    justify-content: center;
+    .novedad-columna, .marcas-columna {
+        .novedad-titulo, .marcas-titulo {
             h3 {
-                font-size: 45px;
+                font-size: 40px;
                 font-weight: 600;
                 text-align: center;
                 text-transform:uppercase;
-                margin: 60px 0px 30px;
-                color: $color-verde-oscuro;
+                margin: 90px 0px 50px;
+                color: $color-verde;
             }
         }
         div {
+            img {
+                padding-left: 20px;
+            }
             p {
                 font-size: 18px;
                 font-weight: 300;
                 text-align:justify;
-                padding: 0px 25px;
+                padding: 0px 35px 0px 0px;
             }
         }
     }
@@ -90,14 +96,15 @@
     width: 100%;
     margin-top: 50px;
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(3,1fr);
-    grid-auto-rows: 150px;    
-    gap: 20px;
+    grid-auto-rows: 140px;    
+    gap: 70px 20px;
     div {
         img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit:contain;
             transition: 1s;
             &:hover {
                 transform:scale(1.2);
@@ -108,8 +115,7 @@
 
 .banner {
     background-color: $color-amarillo;
-    ;
-    margin: 90px 0px 0px ;
+    margin: 150px 0px ;
     div {
         text-align: center;
         padding: 30px 0px;
@@ -124,7 +130,7 @@
                 margin: 10px 0px;
             }
             p {
-                color: $color-gris-oscuro;
+                color: $color-negro;
                 font-size: 16px;
             }
         }

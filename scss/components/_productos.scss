@@ -1,5 +1,5 @@
 /*-----------PRODUCTOS-----------*/
-.contenedor {
+.contenedor-carrusel {
     margin-top: 8%!important;
 }
 .tienda{
@@ -7,32 +7,31 @@
         display: flex;
         justify-content:space-around;
         flex-wrap: wrap;
-        margin: 10% 0%;
+        margin: 8% 0;
         div{
             border: 1px solid rgba(41, 41, 41, 0.2);
-            margin-bottom: 30px;
-            height: 600px;
-            background-color: $color-gris-claro;
+            margin-bottom: 50px;
+            height: 520px;
+            background-color: $color-gris-header;
             display: flex;
             flex-direction: column;
             justify-content:flex-start;
             align-content: center;
             align-items: center;
             h2{
-                font-size: 20px;
-                margin: 15px 0px;
+                font-size: 22px;
+                margin: 22px 0 18px 0;
                 text-transform: uppercase;
             }
             a{
                 text-decoration: none;
-                background-color: $color-naranja-oscuro;
+                background-color: $color-bordo;
                 font-size: 15px;
-                padding: 6px;
+                padding: 4px 20px;
                 color: $color-blanco;
                 border-radius: 3px;
                 &:hover{
-                    background-color: $color-verde-oscuro;
-                    padding: 6px 10px;              
+                    background-color: $color-verde-oscuro-2;            
                 }
             }
         }

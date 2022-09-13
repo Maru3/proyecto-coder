@@ -35,6 +35,14 @@
                     input{
                         margin-bottom: 10px;
                     }
+                    button{
+                        background-color:$color-violeta;
+                        border-color:$color-violeta;
+                        &:hover{
+                            background-color:$color-negro;
+                            border-color:$color-negro;
+                        }
+                    }
                 }
             }
         }
@@ -43,12 +51,9 @@
 
 .contenedor-mapa{
     margin-top: 10%!important;
-    margin-bottom: 8%!important;
     display: block;
     align-items: center;
     justify-content: center;
-    // @extend %flex-center;
-    // flex-wrap:wrap;
     div{
         .contenedor-iframe{
             position: relative;
@@ -56,7 +61,7 @@
             height: 0;
             overflow: hidden;
             iframe{
-                border: 2px solid $color-verde-claro!important;
+                border: 2px solid $color-dorado!important;
                 position: absolute;
                 top:0;
                 left: 0;

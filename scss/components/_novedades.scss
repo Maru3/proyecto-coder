@@ -1,7 +1,7 @@
 /*-----------NOVEDADES-----------*/
 @import "../base/maps";
 
-.contenedor{
+.contenedor-novedades{
     margin-top: 8%;
 }
 
@@ -10,6 +10,7 @@
         div{
             div{
                 div{
+                    padding: 2rem 2rem!important;
                     h2{
                         color: map-get($titulo, color-texto );
                         font-size: map-get($titulo, fuente-texto );
@@ -19,10 +20,14 @@
                     }
                     p{
                         font-size: map-get($parrafo, fuente-texto);
-                        text-align: map-get($titulo, alineacion-texto );
+                        text-align: map-get($parrafo, alineacion-texto );
                     }
                 }
             }
         }
     }
+}
+
+.mb-8{
+    margin-bottom: 8%;
 }

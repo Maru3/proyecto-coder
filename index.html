@@ -16,7 +16,7 @@
         <!--Title-->
         <meta property="og:title" content="Distribuidora Norte | Mueblería y Colchonería">
         <!--URL-->
-        <meta property="og:url" content="">
+        <meta property="og:url" content="https://distribuidoranorte.netlify.app/">
         <!--Image-->
         <meta property="og:image" content="">
         <!--Description-->
@@ -30,37 +30,50 @@
     <body>
         <!--Menú Principal del sitio-->
         <header>
-            <a href="./index.html">
-                <img src="./img/arbol-menu.png" alt="Logo">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/productos.html">Productos</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="./pages/novedades.html">Novedades</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-xl">
+                    <a href="./index.html">
+                        <img src="./img/arbol-menu.png" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse justify-content-lg-end" id="navbar">
+                        <ul class="navbar-nav mb-lg-2">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/novedades.html">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <main>
             <!--Sección del banner principal del home.-->
             <section class="hero">
-                <div>
-                    <h1>Somos Distribuidora Norte</h1>
-                    <h2>Bienvenidos a Nuestra Web</h2>
-                </div>
+                <h1>Somos Distribuidora Norte</h1>
+                <h2>Bienvenidos a Nuestra Web</h2>
             </section>
 
-            <!--Aca lo arme como card por el momento, pero seria mas bien 3 mini banners distintos, donde al situarse en c/uno, con css hacerle un efecto hover-->
+            <!--Categorias de Productos-->
             <section class="categorias">
-                <div>
+                <div class="container-fluid contenedor-categorias">
                     <div>
                         <img src="./img/sillon.jpg" alt="sillon beige y rojo">
                         <h3>Living</h3>
                     </div>
                     <div>
-                        <img src="./img/dormitorio.jpg" alt="">
+                        <img src="./img/dormitorio.jpg" alt="dormitorio">
                         <h3>Dormitorio</h3>
                     </div>
                     <div>
@@ -72,42 +85,55 @@
             
             <!--Sección Novedades del home-->
             <section class="container-fluid novedad">
-                <div class="row novedad_columna">
-                    <div class="col-12 novedad_titulo">
+                <div class="row novedad-columna">
+                    <div class="col-12 novedad-titulo">
                         <h3>Novedad del Mes</h3> 
                     </div>
-                    <div class="col-4 col-sm-5">
+                    <div class="col-xxl-4 col-md-5 col-sm-5">
                         <img src="./img/bahiut.jpg" class="img-fluid" alt="bahiut">
                     </div>
-                    <div class="col-8 col-sm-7 d-flex align-self-center">
+                    <div class="col-xxl-8 col-md-7 col-sm-7 d-flex align-self-center">
                         <p>Este bahiut tiene un hermoso diseño y cuenta con mucho lugar de guardado. Cajones, puertas, estantes y todo lo necesario para que organices tu espacio.<br>Se puede usar como mueble de servicio a la mesa de un comedor, así como mueble para cristalería y bebidas en un living, o como recibidor en un hall de ingreso. La superficie de su tapa tiene el espacio suficiente para colocar un televisor o simplemente para exhibir elementos decorativos.<br><br>Medidas: 1.00m de alto x 1.80m de ancho x 0.43m de profundidad.<br>Consúltanos por colores disponibles.</p>
                     </div>
                 </div>
             </section>
 
             <!--Galeria de Marcas-->
+            <section class="container-fluid marcas">
+                <div class="row marcas-columna">
+                    <div class="col-12 marcas-titulo">
+                        <h3>Nos Acompañan..</h3> 
+                    </div> 
+                </div>
+            </section>
             <section class="grid-galeria">
                 <div class="grid-item">
-                    <img src="./img/deseo-logo.png" alt="">
+                    <img src="./img/LOGO NATIVA.png" alt="logo de la marca Nativa de color verde">
                 </div>
                 <div class="grid-item">
-                    <img src="./img/dadone.png" alt="">
+                    <img src="./img/dadone.png" alt="logo de la marca Dadone de color bordo">
                 </div>
                 <div class="grid-item">
-                    <img src="./img/Logo-Color-Living.png" alt="">
+                    <img src="./img/Logo-Color-Living.png" alt="logo del Grupo Color Living de color naranja y azul">
                 </div>
                 <div class="grid-item">
-                    <img src="./img/LOGO INDUCOL.png" alt="">
+                    <img src="./img/LOGO INDUCOL.png" alt="logo de la marca Inducol de color lavanda">
                 </div>
                 <div class="grid-item">
-                    <img src="./img/logoKingKoil.jpg" alt="">
+                    <img src="./img/deseo-logo.png" alt="logo de la marca Cannon de color verde">
                 </div>
                 <div class="grid-item">
-                    <img src="./img/LOGO NATIVA.png" alt="">
+                    <img src="./img/logoKingKoil.jpg" alt="logo de la marca king Koil de color negro, naranja y verde">
+                </div>
+                <div class="grid-item">
+                    <img src="./img/logocannon.png" alt="logo de la marca Deseo de color naranja y azul">
+                </div>
+                <div class="grid-item">
+                    <img src="./img/logorayces.jpg" alt="logo de la marca Rayces de color blanco y negro">
                 </div>
             </section>
 
-            <!--En esta seccion la idea es hacer tipo banner con estos 3 elementos. Tipo mercado libre-->
+            <!--Banner con 3 elementos. Tipo mercado libre.-->
             <section class="banner">
                 <div class="banner-contenedor">
                     <div>

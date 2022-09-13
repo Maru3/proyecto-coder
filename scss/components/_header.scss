@@ -1,9 +1,7 @@
 /*-----------HEADER-----------*/
 header {
     width: 100%;
-    background-color:$color-gris;
-    padding: 15px;
-    @include flex (flex,center,space-between);
+    background-color:$color-blanco;
     a {
         img {
             width: 60px;
@@ -12,18 +10,16 @@ header {
     }
     nav {
         ul{
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            padding-right: 15px;
             li{
-                margin: 15px 15px 0px 15px;
+                margin: 10px 10px 0px 10px;
+                .nav-link.active{
+                    color:$color-verde-oscuro-2!important;
+                }
                 a{
-                    text-decoration: none;
-                    font-size: 18px;
-                    color: $color-verde-claro;
+                    font-size: 17px;
+                    color: $color-marron!important;
                     &:hover{
-                        color:$color-naranja;
+                        color:$color-dorado!important;
                     }
                 }
             }

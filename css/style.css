@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*Colores Arbol Logo*/
+/*Colores Oscuros*/
 /*-----------EXTENDS-----------*/
 footer, .banner .banner-contenedor {
   display: flex;
@@ -34,37 +36,29 @@ body {
   .banner-section h1 {
     font-size: 60px;
     font-weight: 700;
-    color: #DFBF00; }
+    color: #D9C917; }
 
 /*-----------HEADER-----------*/
 header {
   width: 100%;
-  background-color: #f2f2f27b;
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
+  background-color: #FFFFFF; }
   header a img {
     width: 60px;
     height: 50px; }
-  header nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 15px; }
-    header nav ul li {
-      margin: 15px 15px 0px 15px; }
-      header nav ul li a {
-        text-decoration: none;
-        font-size: 18px;
-        color: #A6C447; }
-        header nav ul li a:hover {
-          color: #DD8C22; }
+  header nav ul li {
+    margin: 10px 10px 0px 10px; }
+    header nav ul li .nav-link.active {
+      color: #72A300 !important; }
+    header nav ul li a {
+      font-size: 17px;
+      color: #594E38 !important; }
+      header nav ul li a:hover {
+        color: #C4AC3E !important; }
 
 /*-----------FOOTER-----------*/
 footer {
   width: 100%;
-  background-color: #f2f2f27b;
+  background-color: #FFFFFF;
   flex-wrap: wrap; }
   footer .logo {
     width: 100px;
@@ -78,78 +72,85 @@ footer {
 /*-----------INDEX-----------*/
 .hero {
   width: 100%;
-  height: 80vh;
-  background-image: url(../img/hero2.jpg);
-  background-position: center;
+  height: 90vh;
+  background-image: url(../img/hero3.jpg);
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-blend-mode: overlay;
-  background-color: #3333337c;
+  background-attachment: scroll;
   display: flex;
-  justify-content: center; }
-  .hero div {
-    width: 60%;
-    text-align: center; }
-    .hero div h1 {
-      color: #BF6430;
-      font-size: 60px;
-      font-weight: 700;
-      position: relative;
-      top: 15%;
-      letter-spacing: 2px;
-      margin-bottom: 5px; }
-    .hero div h2 {
-      color: #731D5C;
-      font-size: 45px;
-      font-weight: 600;
-      position: relative;
-      top: 15%; }
+  flex-direction: column;
+  align-items: center; }
+  .hero h1 {
+    color: #594E38;
+    font-size: 60px;
+    font-weight: 700;
+    position: relative;
+    top: 15%;
+    letter-spacing: 2px;
+    margin-bottom: 5px; }
+  .hero h2 {
+    color: #C4AC3E;
+    font-size: 45px;
+    font-weight: 600;
+    position: relative;
+    top: 15%; }
 
-.categorias div {
+.categorias .contenedor-categorias {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; }
-  .categorias div div {
-    margin: 80px 0px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 135px 0px 100px 0px; }
+  .categorias .contenedor-categorias div {
+    position: relative;
     text-align: center;
-    width: 450px;
+    width: 400px;
     height: 400px;
     transition: 0.5s; }
-    .categorias div div:hover {
+    .categorias .contenedor-categorias div:hover {
       transform: scale(1.1); }
-    .categorias div div img {
+    .categorias .contenedor-categorias div img {
       width: 400px;
-      height: 400px; }
-    .categorias div div h3 {
+      height: 400px;
+      object-fit: cover;
+      box-shadow: 10px 10px 23px -9px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 23px -9px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 23px -9px rgba(0, 0, 0, 0.75); }
+    .categorias .contenedor-categorias div h3 {
+      position: absolute;
+      bottom: 0;
       font-size: 35px;
-      color: #030303;
-      position: relative;
-      bottom: 260px; }
+      width: 100%;
+      background-color: #BF6430;
+      color: #FFFFFF; }
 
-.novedad {
+.novedad, .marcas {
   display: flex;
-  align-items: center; }
-  .novedad .novedad_columna .novedad_titulo h3 {
-    font-size: 45px;
+  align-items: center;
+  justify-content: center; }
+  .novedad .novedad-columna .novedad-titulo h3, .novedad .novedad-columna .marcas-titulo h3, .novedad .marcas-columna .novedad-titulo h3, .novedad .marcas-columna .marcas-titulo h3, .marcas .novedad-columna .novedad-titulo h3, .marcas .novedad-columna .marcas-titulo h3, .marcas .marcas-columna .novedad-titulo h3, .marcas .marcas-columna .marcas-titulo h3 {
+    font-size: 40px;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
-    margin: 60px 0px 30px;
-    color: #72A300; }
-  .novedad .novedad_columna div p {
+    margin: 90px 0px 50px;
+    color: #A4C246; }
+  .novedad .novedad-columna div img, .novedad .marcas-columna div img, .marcas .novedad-columna div img, .marcas .marcas-columna div img {
+    padding-left: 20px; }
+  .novedad .novedad-columna div p, .novedad .marcas-columna div p, .marcas .novedad-columna div p, .marcas .marcas-columna div p {
     font-size: 18px;
     font-weight: 300;
     text-align: justify;
-    padding: 0px 25px; }
+    padding: 0px 35px 0px 0px; }
 
 .grid-galeria {
   width: 100%;
   margin-top: 50px;
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 150px;
-  gap: 20px; }
+  grid-auto-rows: 140px;
+  gap: 70px 20px; }
   .grid-galeria div img {
     width: 100%;
     height: 100%;
@@ -160,7 +161,7 @@ footer {
 
 .banner {
   background-color: #DFBF00;
-  margin: 90px 0px 0px; }
+  margin: 150px 0px; }
   .banner div {
     text-align: center;
     padding: 30px 0px; }
@@ -171,42 +172,41 @@ footer {
       color: #FFFFFF;
       margin: 10px 0px; }
     .banner .banner-contenedor div p {
-      color: #605E5E;
+      color: #333333;
       font-size: 16px; }
 
 /*-----------PRODUCTOS-----------*/
-.contenedor {
+.contenedor-carrusel {
   margin-top: 8% !important; }
 
 .tienda .contenedor-productos {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 10% 0%; }
+  margin: 8% 0; }
   .tienda .contenedor-productos div {
     border: 1px solid rgba(41, 41, 41, 0.2);
-    margin-bottom: 30px;
-    height: 600px;
-    background-color: #f2f2f2b1;
+    margin-bottom: 50px;
+    height: 520px;
+    background-color: #f2f2f289;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
     align-items: center; }
     .tienda .contenedor-productos div h2 {
-      font-size: 20px;
-      margin: 15px 0px;
+      font-size: 22px;
+      margin: 22px 0 18px 0;
       text-transform: uppercase; }
     .tienda .contenedor-productos div a {
       text-decoration: none;
-      background-color: #BF6430;
+      background-color: #651517;
       font-size: 15px;
-      padding: 6px;
+      padding: 4px 20px;
       color: #FFFFFF;
       border-radius: 3px; }
       .tienda .contenedor-productos div a:hover {
-        background-color: #72A300;
-        padding: 6px 10px; }
+        background-color: #72A300; }
 
 /*-----------NOSOTROS-----------*/
 .contenedor-fluido {
@@ -214,10 +214,11 @@ footer {
   .contenedor-fluido div div h2 {
     font-size: 40px;
     margin-bottom: 30px;
-    color: #DFBF00; }
+    color: #7E1E5D; }
   .contenedor-fluido div div p {
     font-size: 18px;
-    text-align: justify; }
+    text-align: justify;
+    margin: 0 2%; }
 
 .contenedor {
   margin-top: 8% !important;
@@ -225,27 +226,32 @@ footer {
   .contenedor div div h2 {
     font-size: 40px;
     margin-bottom: 35px;
-    color: #DFBF00; }
+    color: #7E1E5D; }
   .contenedor div div h3 {
     font-size: 21px;
     margin-top: 15px;
-    text-align: center; }
+    text-align: center;
+    color: #6C3D55; }
 
 /*-----------NOVEDADES-----------*/
 /*-----------MAPS-----------*/
-.contenedor {
+.contenedor-novedades {
   margin-top: 8%; }
 
-.ingreso div div div div h2 {
-  color: #BF9F3F;
-  font-size: 40px;
-  margin-bottom: 20px;
-  font-weight: 600;
-  text-align: center; }
+.ingreso div div div div {
+  padding: 2rem 2rem !important; }
+  .ingreso div div div div h2 {
+    color: #FDC856;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: center; }
+  .ingreso div div div div p {
+    font-size: 18px;
+    text-align: justify; }
 
-.ingreso div div div div p {
-  font-size: 18px;
-  text-align: center; }
+.mb-8 {
+  margin-bottom: 8%; }
 
 /*-----------CONTACTO-----------*/
 .contenedor-fluido-contacto {
@@ -264,15 +270,20 @@ footer {
     font-size: 18px; }
   .contenedor-fluido-contacto div div div a {
     font-size: 18px;
-    color: #72A300; }
+    color: #63954E; }
   .contenedor-fluido-contacto div div p {
     font-size: 18px; }
   .contenedor-fluido-contacto div div form div input {
     margin-bottom: 10px; }
+  .contenedor-fluido-contacto div div form div button {
+    background-color: #7E1E5D;
+    border-color: #7E1E5D; }
+    .contenedor-fluido-contacto div div form div button:hover {
+      background-color: #333333;
+      border-color: #333333; }
 
 .contenedor-mapa {
   margin-top: 10% !important;
-  margin-bottom: 8% !important;
   display: block;
   align-items: center;
   justify-content: center; }
@@ -282,7 +293,7 @@ footer {
     height: 0;
     overflow: hidden; }
     .contenedor-mapa div .contenedor-iframe iframe {
-      border: 2px solid #A6C447 !important;
+      border: 2px solid #C4AC3E !important;
       position: absolute;
       top: 0;
       left: 0;
@@ -301,7 +312,7 @@ footer {
       font-size: 50px; }
     .hero div h2 {
       font-size: 40px; }
-  .novedad .novedad_columna .novedad_titulo h3 {
+  .novedad .novedad-columna .novedad-titulo h3 {
     font-size: 40px; } }
 
 @media screen and (max-width: 742px) {
@@ -310,7 +321,7 @@ footer {
     height: 60vh; }
     .hero div h1 {
       font-size: 42px; }
-  .novedad .novedad_columna .novedad_titulo h3 {
+  .novedad .novedad-columna .novedad-titulo h3 {
     font-size: 28px; } }
 
 @media screen and (max-width: 625px) {
@@ -322,9 +333,9 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center; }
-    .novedad .novedad_columna .novedad_titulo h3 {
+    .novedad .novedad-columna .novedad-titulo h3 {
       margin: 20px 0px 30px; }
-    .novedad .novedad_columna div p {
+    .novedad .novedad-columna div p {
       font-size: 16px;
       padding: 0px 10px; } }
 
@@ -335,7 +346,7 @@ footer {
       font-size: 35px; }
     .hero div h2 {
       font-size: 30px; }
-  .novedad .novedad_columna .novedad_titulo h3 {
+  .novedad .novedad-columna .novedad-titulo h3 {
     font-size: 30px; } }
 
 /*------PRODUCTOS------*/
